@@ -1,34 +1,48 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import test from '../../public/images/test.png'
-import check from '../../public/images/check.svg'
-import me from '../../public/images/me.png'
-import sky from '../../public/images/sky.jpg'
-import proj from '../../public/images/project-screenshot.png'
+"use client";
 
+import Image from "next/image";
+import styles from "./page.module.css";
+import sea1 from "../../public/images/1.jpg";
+import sea2 from "../../public/images/2.jpg";
+import sea3 from "../../public/images/3.jpg";
+import sea4 from "../../public/images/4.jpg";
+import sea5 from "../../public/images/5.jpg";
+import sea6 from "../../public/images/6.jpg";
+import { motion } from "framer-motion";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <section className={styles.work}>
-        <h1>WORK</h1>
-        <div className={styles.leftOutter}>
-          <Image src={test} alt="test"/>
-        </div>
-        <div className={styles.leftHalf}>
-          <Image src={check} alt="check"/>
-        </div>
-      </section>
-      <div className={styles.divider}></div>
-      <section className={styles.play}>
-        <h1>PLAY</h1>
-        <div className={styles.rightHalf}>
-          <Image src={me} alt="me"/>
-        </div>
-        <div className={styles.rightOutter}>
-          <Image src={sky} alt="sky"/>
-        </div>
-      </section>
-    </main>
-  )
+    const picsArr = [sea1, sea2, sea3, sea4, sea5, sea6];
+    return (
+        <main className={styles.main}>
+            <motion.div
+                className={styles.circle}
+                animate={{ rotate: [0, 360] }}
+                transition={{
+                    duration: picsArr.length * 10,
+                    repeat: Infinity,
+                    ease: "linear",
+                }}
+            >
+                {picsArr.map((pic, index) => {
+                    const angle = 360 / picsArr.length;
+                    return (
+                        <Image
+                            key={index}
+                            src={pic}
+                            alt="name"
+                            priority
+                            style={{
+                                transform: `rotate(calc(${
+                                    angle * index
+                                } * 1deg)) translate(calc(70vh / 2)) rotate(calc(${
+                                    angle * index
+                                }  * -1deg))`,
+                            }}
+                        />
+                    );
+                })}
+            </motion.div>
+            <section className={styles.work}></section>
+        </main>
+    );
 }
