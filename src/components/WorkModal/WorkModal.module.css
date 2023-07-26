@@ -1,0 +1,27 @@
+.projectModal {
+    border: 2px #03012c solid;
+    height: 90%;
+    width: 0%;
+    border-radius: 16px;
+    padding-left: 35vh;
+    overflow: hidden;
+    padding-right: 36px;
+}
+
+.projectModal p {
+    font-size: 24px;
+    columns: 3;
+    font-weight: 400;
+}
+
+.aboutProject {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.images img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
