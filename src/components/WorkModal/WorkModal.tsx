@@ -11,7 +11,7 @@ export default function WorkModal() {
     return (
         <motion.div
             className={styles.projectModal}
-            animate={{ width: ["0%", "90%"] }}
+            animate={{ width: ["0%", "80%"] }}
         >
             <h1>Test naslov</h1>
             <div className={styles.aboutProject}>
@@ -38,14 +38,7 @@ export default function WorkModal() {
                     rhoncus. Interdum et malesuada fames ac ante ipsum primis in
                     faucibus. Nunc pellentesque nunc nec nisi dapibus molestie.
                     Nullam rhoncus dui ut augue egestas, in rhoncus urna
-                    vehicula. Mauris sodales lobortis mi et ultricies. Vivamus
-                    in pellentesque felis. Vivamus non cursus dui. Morbi
-                    vehicula ut nisl sit amet porttitor. Praesent fringilla
-                    mauris augue, id hendrerit nisi pellentesque ut. Sed ac
-                    nulla at risus sollicitudin hendrerit eu id justo. Fusce
-                    scelerisque eros ut odio euismod ornare. Aliquam rutrum
-                    ullamcorper vehicula. Phasellus lobortis sed ipsum ac
-                    ullamcorper.
+                    vehicula.
                 </p>
                 <div className={styles.images}>
                     <Image src={sea1} alt="name" priority />

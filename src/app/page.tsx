@@ -8,7 +8,7 @@ export default function Home() {
         <main className={styles.main}>
             <section className={styles.work}>
                 <CircularElement />
-                <WorkModal />
+                {/* <WorkModal /> */}
             </section>
             <Sidenav />
         </main>
