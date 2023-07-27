@@ -8,10 +8,12 @@ import sea3 from "../../../public/images/3.jpg";
 import sea4 from "../../../public/images/4.jpg";
 import sea5 from "../../../public/images/5.jpg";
 import sea6 from "../../../public/images/6.jpg";
-import { motion } from "framer-motion";
+import { motion, useAnimate } from "framer-motion";
 
 export default function CircularElement() {
     const picsArr = [sea1, sea2, sea3, sea4, sea5, sea6];
+    const [animate] = useAnimate();
+
     return (
         <motion.div
             className={styles.circle}
@@ -21,6 +23,7 @@ export default function CircularElement() {
                 repeat: Infinity,
                 ease: "linear",
             }}
+            // onHoverStart={()=>animate.pause()}
         >
             {picsArr.map((pic, index) => {
                 const angle = 360 / picsArr.length;

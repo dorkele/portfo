@@ -4,8 +4,9 @@
     width: 70vh;
     border-radius: 480px;
     position: absolute;
-    background-color: tomato;
+    background-color: #ff6347;
     left: -35vh;
+    filter: drop-shadow(30px 10px 4px #4444dd);
 }
 
 .circle img {
