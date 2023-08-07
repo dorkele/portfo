@@ -1,16 +1,21 @@
+import CvPaper from "@/components/CvPaper/CvPaper";
 import styles from "./page.module.css";
-import CircularElement from "@/components/CircularElement/CircularElement";
-import WorkModal from "@/components/WorkModal/WorkModal";
-import Sidenav from "@/components/Sidenav/Sidenav";
+import Notebook from "@/components/Notebook/Notebook";
+import Image from "next/image";
+import stain from "../../public/images/coffee-stain.png";
 
 export default function Home() {
     return (
         <main className={styles.main}>
-            <section className={styles.work}>
-                <CircularElement />
-                {/* <WorkModal /> */}
-            </section>
-            <Sidenav />
+            <div className={styles.work}>
+                <Notebook />
+                <CvPaper />
+                <Image
+                    src={stain}
+                    alt="coffee stain"
+                    className={styles.stain}
+                />
+            </div>
         </main>
     );
 }

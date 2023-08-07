@@ -1,0 +1,27 @@
+.cvPaper {
+    background-color: #ffffff;
+    filter: drop-shadow(10px 0px 4px rgba(0, 0, 0, 25%));
+    height: 85vh;
+    width: 656px;
+    transform: rotate(-25deg);
+    position: absolute;
+    left: 10%;
+    bottom: -65%;
+    padding: 32px;
+    display: flex;
+    justify-content: end;
+}
+
+.imageContainer {
+    border-radius: 480px;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+}
+
+.imageContainer img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(3px);
+}
