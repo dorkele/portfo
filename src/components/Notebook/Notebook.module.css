@@ -1,6 +1,6 @@
 .notebook {
     height: 95vh;
-    background-color: #ccccff;
+    background-color: #81d8d0;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
     border-top-left-radius: 4px;
@@ -10,12 +10,10 @@
     align-items: center;
     padding: 120px;
     filter: drop-shadow(10px 0px 4px rgba(0, 0, 0, 25%));
-    transform: rotate(-10deg);
-    position: absolute;
-    top: 5%;
-    left: 10%;
+    transform: rotate(-5deg);
     background-image: url("../../../public/images/oko1.png");
     background-size: 150px;
+    z-index: 10;
 }
 
 .belonging {
@@ -49,7 +47,7 @@
 }
 
 .title {
-    color: #ff9966;
+    color: #ff0800;
     font-size: 92px;
     z-index: 2;
 }
