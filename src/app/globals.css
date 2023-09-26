@@ -24,10 +24,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .test {
-    font-size: 10em;
+    font-size: 116px;
     font-family: var(--font-rosarivo);
 }
 
@@ -37,12 +38,12 @@ p {
 
 .text-outline {
     color: var(--fg-color);
-    -webkit-text-stroke: 2px #010b13;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--fg-color);
+    -webkit-text-fill-color: var(--bg-color);
 }
 
 .text-outline-orange-fill:hover {
-    -webkit-text-fill-color: #ff9966;
+    -webkit-text-fill-color: var(--orange-accent-color);
 }
 
 @media (prefers-color-scheme: dark) {
