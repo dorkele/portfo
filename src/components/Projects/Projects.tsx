@@ -1,25 +1,41 @@
+"use client";
+import Project from "../Project/Project";
 import styles from "./Projects.module.css";
+import { useState } from "react";
+import projects from "../../../projects.json";
 
 const Projects = () => {
-    const projects = [
-        { name: "Nevidljivi solo" },
-        { name: "Sobbing Bookstore" },
-        { name: "Piskaralo" },
-        { name: "Bookie" },
-        { name: "Shljokice" },
-        { name: "Playground" },
-    ];
+    const [expanded, setExpanded] = useState<null | number>(null);
+
+    const handleExpand = (index: number) => {
+        if (expanded === index) {
+            setExpanded(null);
+        } else {
+            setExpanded(index);
+        }
+    };
+
     return (
         <section className={styles.projects} id="projects">
             {projects.map((project, index) => {
                 return (
-                    <div key={index} className={styles.row}>
-                        <h2
-                            className={`h2 text-outline text-outline-orange-fill ${styles.title}`}
+                    <>
+                        <div
+                            key={index}
+                            className={styles.row}
+                            onClick={() => handleExpand(index)}
                         >
-                            {project.name}
-                        </h2>
-                    </div>
+                            <h2
+                                className={`h2 text-outline text-outline-orange-fill ${styles.title}`}
+                            >
+                                {project.name}
+                            </h2>
+                        </div>
+                        <Project
+                            expanded={expanded === index ? true : false}
+                            project={projects[index]}
+                        />
+                    </>
                 );
             })}
         </section>

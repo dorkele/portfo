@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Nevidljivi solo",
+        "imgBatch1": [{ "src": "/images/vibe.JPG" }],
+        "text1": "Proin imperdiet sed purus sed pharetra. Donec elementum eget ex eu tristique. Nulla venenatis massa non odio convallis lobortis. Pellentesque nec porttitor lectus. Sed libero nulla, eleifend non maximus ut, eleifend vel neque.",
+        "imgBatch2": [{ "src": "/images/horizontal.JPG" }],
+        "text2": "Proin imperdiet sed purus sed pharetra. Donec elementum eget ex eu tristique. Nulla venenatis massa non odio convallis lobortis. Pellentesque nec porttitor lectus. Sed libero nulla, eleifend non maximus ut, eleifend vel neque."
+    },
+    { "name": "Sobbing Bookstore" },
+    { "name": "Piskaralo" },
+    { "name": "Bookie" },
+    { "name": "Shljokice" },
+    { "name": "Playground" }
+]
