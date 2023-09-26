@@ -27,9 +27,18 @@ body {
     width: 100%;
 }
 
-.test {
+.h1 {
     font-size: 116px;
     font-family: var(--font-rosarivo);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.h2 {
+    font-size: 96px;
+    font-family: var(--font-rosarivo);
+    font-style: normal;
+    font-weight: 400;
 }
 
 p {
@@ -44,6 +53,7 @@ p {
 
 .text-outline-orange-fill:hover {
     -webkit-text-fill-color: var(--orange-accent-color);
+    cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,0 +1,22 @@
+.projects {
+    width: 100%;
+    border-top: 1px var(--fg-color) solid;
+    position: relative;
+}
+
+.row {
+    border-bottom: 1px var(--fg-color) solid;
+    display: grid;
+    grid-template-columns: 1fr minmax(100px, 1440px) 1fr;
+    padding: 24px 0;
+}
+
+.title {
+    grid-column: 2 / span 1;
+}
+
+.cloud {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+}

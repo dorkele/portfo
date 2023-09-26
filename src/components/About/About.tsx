@@ -14,9 +14,9 @@ const About = () => {
             <div>
                 <div>
                     <div className={styles.orangeElement}></div>
-                    <p className={`text-outline test ${styles.title}`}>
+                    <h1 className={`text-outline h1 ${styles.title}`}>
                         Dora Tominic
-                    </p>
+                    </h1>
                 </div>
                 <p className={styles.paragraph}>
                     Proin imperdiet sed purus sed pharetra. Donec elementum eget
