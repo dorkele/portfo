@@ -2,11 +2,13 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
-    width: 600px;
-    left: 0;
-    top: 50%;
-    transform-origin: top left;
-    transform: rotate(-90deg);
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    z-index: 10;
+    /* top: 50%; */
+    /* transform-origin: top left;
+    transform: rotate(-90deg); */
 }
 
 .nav::before {
@@ -21,18 +23,18 @@
     -o-filter: blur(4px);
     -ms-filter: blur(4px);
     filter: blur(4px);
-    border-radius: 0 0 8px 8px;
+    border-radius: 16px;
 }
 
 .nav a {
     text-decoration: none;
     color: var(--fg-color);
     font-size: 24px;
+    font-family: var(--font-rosarivo);
 }
 
 .links {
-    padding: 16px 20px;
-
+    padding: 16px 100px;
     position: relative;
     display: flex;
     justify-content: space-between;
