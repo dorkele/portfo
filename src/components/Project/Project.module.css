@@ -1,0 +1,57 @@
+.project {
+    height: 0;
+    overflow: hidden;
+}
+
+.expanded {
+    height: 1000px;
+    width: 100%;
+    border-bottom: 1px var(--fg-color) solid;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+    width: 100%;
+    /* max-width: 1440px; */
+}
+
+.img1Container {
+    position: relative;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.img2Container {
+    position: relative;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.textBox1,
+.textBox2 {
+    max-width: 720px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.textBox1 {
+    justify-self: flex-start;
+}
+
+.textBox2 {
+    justify-self: flex-end;
+}
+
+.expanded p {
+    font-size: 16px;
+    max-width: 600px;
+    font-size: 18px;
+    opacity: 70%;
+}
