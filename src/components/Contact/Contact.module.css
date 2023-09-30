@@ -1,0 +1,47 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    padding: 60px 0;
+}
+
+.orangeElement {
+    height: 150px;
+    width: 150px;
+    background-color: var(--orange-accent-color);
+    border-radius: 50%;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    z-index: 1;
+    position: relative;
+}
+
+.titleDiv {
+    width: fit-content;
+    position: relative;
+}
+
+.content {
+    display: flex;
+}
+
+.paragraph {
+    max-width: 600px;
+    font-size: 18px;
+    opacity: 70%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}

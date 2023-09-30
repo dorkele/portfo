@@ -20,13 +20,14 @@ const Project = ({ expanded, project }: ProjectProps) => {
         >
             <div className={styles.content}>
                 <div className={styles.img1Container}>
-                    {project.imgBatch1?.map((img) => {
+                    {project.imgBatch1?.map((img, index) => {
                         return (
                             <Image
                                 src={img.src}
                                 alt=""
                                 fill={true}
                                 style={{ objectFit: "cover" }}
+                                key={index}
                             />
                         );
                     })}
@@ -35,13 +36,14 @@ const Project = ({ expanded, project }: ProjectProps) => {
                     <p>{project.text1}</p>
                 </div>
                 <div className={styles.img2Container}>
-                    {project.imgBatch2?.map((img) => {
+                    {project.imgBatch2?.map((img, index) => {
                         return (
                             <Image
                                 src={img.src}
                                 alt=""
                                 fill={true}
                                 style={{ objectFit: "cover" }}
+                                key={index}
                             />
                         );
                     })}
