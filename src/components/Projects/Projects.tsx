@@ -1,7 +1,7 @@
 "use client";
 import Project from "../Project/Project";
 import styles from "./Projects.module.css";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import projects from "../../../projects.json";
 
 const Projects = () => {
@@ -19,7 +19,7 @@ const Projects = () => {
         <section className={styles.projects} id="projects">
             {projects.map((project, index) => {
                 return (
-                    <>
+                    <Fragment key={index}>
                         <div
                             key={index}
                             className={styles.row}
@@ -35,7 +35,7 @@ const Projects = () => {
                             expanded={expanded === index ? true : false}
                             project={projects[index]}
                         />
-                    </>
+                    </Fragment>
                 );
             })}
         </section>
