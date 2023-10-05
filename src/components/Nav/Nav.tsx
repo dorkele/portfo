@@ -4,6 +4,10 @@ import styles from "./Nav.module.css";
 const Nav = () => {
     const links = [
         {
+            href: "/",
+            name: "About Me",
+        },
+        {
             href: "/#projects",
             name: "Projects",
         },
@@ -13,7 +17,7 @@ const Nav = () => {
         },
         {
             href: "/#contact",
-            name: "Contact",
+            name: "Point of Contact",
         },
     ];
 
