@@ -1,0 +1,31 @@
+.button {
+    min-width: 122px;
+    border: 1px solid var(--fg-color);
+    border-radius: 8px;
+    width: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px 0 16px;
+    position: relative;
+}
+
+.button p {
+    font-size: 32px;
+    font-family: var(--font-rosarivo);
+}
+
+.button:active::after {
+    outline: 5px solid var(--violet-accent-color);
+    content: " ";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    pointer-events: none;
+    border: solid 5px solid var(--violet-accent-color);
+    border-radius: 8px;
+    filter: blur(3px);
+}

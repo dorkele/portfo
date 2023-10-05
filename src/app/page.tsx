@@ -10,9 +10,9 @@ export default function Home() {
             <About />
             <Projects />
             <Contact />
-            <div id="cv" className={styles.section}>
+            {/* <div id="cv" className={styles.section}>
                 Curriculum
-            </div>
+            </div> */}
         </main>
     );
 }

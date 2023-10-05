@@ -2,9 +2,10 @@
 import styles from "./Contact.module.css";
 import Image from "next/image";
 import rainCloud from "../../../public/rain-clouds-png-273.png";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { sendEmail } from "@/utils/send-email";
+import Button from "../Button/Button";
 
 export type FormData = {
     name: string;
@@ -14,18 +15,23 @@ export type FormData = {
 
 const Contact = () => {
     const { register, handleSubmit } = useForm<FormData>();
+    const inputRef = useRef(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
+    const [focusedInput, setFocusedInput] = useState("");
 
     function onSubmit(data: FormData) {
         sendEmail(data);
     }
+    useEffect(() => {
+        console.log(inputRef.current);
+    }, [inputRef]);
 
     return (
         <section className={styles.contact} id="contact">
             <div className={styles.titleDiv}>
                 <div className={styles.orangeElement}></div>
-                <h2 className={`h2 text-outline ${styles.title}`}>
+                <h2 className={`h1 text-outline ${styles.title}`}>
                     Point of Contact
                 </h2>
             </div>
@@ -45,28 +51,51 @@ const Contact = () => {
                         height={354}
                     />
                 </div>
-                <div>
-                    <form
-                        className={styles.form}
-                        onSubmit={handleSubmit(onSubmit)}
-                    >
-                        <label htmlFor="name">NAME</label>
+                <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+                    <div className={styles.inputContainer}>
                         <input
                             type="text"
                             {...register("name", { required: true })}
+                            className={styles.input}
+                            placeholder="NAME"
+                            ref={inputRef}
+                            onFocus={() => setFocusedInput("name")}
+                            onBlur={() => setFocusedInput("")}
                         />
-                        <label htmlFor="email">E-MAIL</label>
+                        {focusedInput === "name" && (
+                            <label htmlFor="name">Name</label>
+                        )}
+                    </div>
+                    <div className={styles.inputContainer}>
                         <input
                             type="email"
                             {...register("email", { required: true })}
+                            className={styles.input}
+                            placeholder="EMAIL"
+                            ref={inputRef}
+                            onFocus={() => setFocusedInput("email")}
+                            onBlur={() => setFocusedInput("")}
                         />
-                        <label htmlFor="message">MESSAGE</label>
+                        {focusedInput === "email" && (
+                            <label htmlFor="email">Email</label>
+                        )}
+                    </div>
+                    <div className={styles.inputContainer}>
                         <textarea
                             {...register("message", { required: true })}
+                            className={styles.input}
+                            placeholder="MESSAGE"
+                            rows={10}
+                            ref={inputRef}
+                            onFocus={() => setFocusedInput("message")}
+                            onBlur={() => setFocusedInput("")}
                         />
-                        <button type="submit">Send</button>
-                    </form>
-                </div>
+                        {focusedInput === "message" && (
+                            <label htmlFor="message">Your message</label>
+                        )}
+                    </div>
+                    <Button type="submit" text="Send" />
+                </form>
             </div>
         </section>
     );

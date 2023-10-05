@@ -4,6 +4,10 @@
     width: 100%;
     max-width: 1440px;
     padding: 60px 0;
+    height: 100vh;
+    justify-content: center;
+    gap: 24px;
+    position: relative;
 }
 
 .orangeElement {
@@ -33,6 +37,8 @@
 
 .content {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .paragraph {
@@ -44,4 +50,51 @@
 .form {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    gap: 24px;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--fg-color);
+    font-size: 24px;
+    padding: 8px;
+    width: 100%;
+    resize: none;
+}
+
+.input:focus {
+    outline: 2px solid var(--violet-accent-color);
+    border-bottom: none;
+}
+
+.input:focus::placeholder {
+    color: transparent;
+    position: absolute;
+    bottom: 8px;
+    font-size: 24px;
+}
+
+.form button {
+    align-self: flex-end;
+}
+
+.cloud1 {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    height: 400px;
+}
+
+.form label {
+    color: var(--violet-accent-color);
+    font-size: 12px;
+    font-family: var(--font-poppins);
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
