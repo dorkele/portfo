@@ -1,0 +1,95 @@
+.CV {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    max-width: 1440px;
+    position: relative;
+    width: 100%;
+    align-self: center;
+    overflow-x: hidden;
+    padding: 120px 0;
+}
+
+.timelineContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: 32px;
+    align-items: center;
+    overflow: visible;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin: 24px 0;
+}
+
+.timeline {
+    height: 1px;
+    width: 100%;
+    background-color: var(--fg-color);
+    top: 50%;
+    transform: translateY(-50);
+    left: 5px;
+}
+
+.backgroundImg {
+    height: 370px;
+    opacity: 0.3;
+    position: absolute;
+    object-fit: contain;
+}
+
+.textContainer {
+    background-color: var(--bg-color);
+    padding: 16px 24px;
+    z-index: 1;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.paragraph {
+    font-size: 18px;
+    opacity: 70%;
+    column-count: 2;
+}
+
+.endDot {
+    height: 32px;
+    width: 32px;
+    background-color: var(--violet-accent-color);
+    border-radius: 50%;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+    z-index: 1;
+}
+
+.experienceDot {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: var(--orange-accent-color);
+    cursor: pointer;
+}
+
+.experienceDot:hover {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.activeDot {
+    outline: 5px solid var(--violet-accent-color);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
