@@ -1,0 +1,32 @@
+[
+    {
+        "title": "sideos",
+        "year": "2021-2023",
+        "text": "Collaborated with product, design, and development teams in creating an innovative product.\\n\\Built and maintained frontend side of the platform that enables organizations and individuals to easily create and manage verifiable credentials.\\nDeveloped a Next.js website with a headless CMS solution in Prismic, delivering a seamless and flexible content management experience that maximized the website's performance and scalability.\\nEmpowered junior developers to achieve their full potential by providing regular feedback, coaching, and mentorship, helping them to develop both personally and professionally.\\nPlayed a key role in research and collaboration with the design team in setting up a design system and design tokens implementation.\\nWorked on the frontend development of a mobile app and browser extension, leveraging my knowledge of React and React Native to create an engaging and user-friendly experience for users across multiple devices",
+        "images": [{ "src": "/images/vibe.JPG" }]
+    },
+    {
+        "title": "etonec",
+        "year": "2021-2023",
+        "text": "Proin imperdiet sed purus sed pharetra. Donec elementum eget ex eu tristique. Nulla venenatis massa non odio convallis lobortis. Pellentesque nec porttitor lectus. Sed libero nulla, eleifend non maximus ut, eleifend vel neque.",
+        "images": [{ "src": "/images/horizontal.JPG" }]
+    },
+    {
+        "title": "Spiced Academy",
+        "year": "2021-2023",
+        "text": "Proin imperdiet sed purus sed pharetra. Donec elementum eget ex eu tristique. Nulla venenatis massa non odio convallis lobortis. Pellentesque nec porttitor lectus. Sed libero nulla, eleifend non maximus ut, eleifend vel neque.",
+        "images": [{ "src": "/images/vibe.JPG" }]
+    },
+    {
+        "title": "sideos",
+        "year": "2021-2023",
+        "text": "Proin imperdiet sed purus sed pharetra. Donec elementum eget ex eu tristique. Nulla venenatis massa non odio convallis lobortis. Pellentesque nec porttitor lectus. Sed libero nulla, eleifend non maximus ut, eleifend vel neque.",
+        "images": [{ "src": "/images/vibe.JPG" }]
+    },
+    {
+        "title": "sideos",
+        "year": "2021-2023",
+        "text": "Proin imperdiet sed purus sed pharetra. Donec elementum eget ex eu tristique. Nulla venenatis massa non odio convallis lobortis. Pellentesque nec porttitor lectus. Sed libero nulla, eleifend non maximus ut, eleifend vel neque.",
+        "images": [{ "src": "/images/vibe.JPG" }]
+    }
+]
