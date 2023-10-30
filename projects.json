@@ -2,13 +2,28 @@
     {
         "name": "Nevidljivi solo",
         "imgBatch1": [{ "src": "/images/vibe.JPG" }],
-        "text1": "Proin imperdiet sed purus sed pharetra. Donec elementum eget ex eu tristique. Nulla venenatis massa non odio convallis lobortis. Pellentesque nec porttitor lectus. Sed libero nulla, eleifend non maximus ut, eleifend vel neque.",
+        "text1": "The Invisible Solo is a body writing project where I explore my complicated relationship with dance and somatic practices in the context of personal history and the stories I tell myself.",
         "imgBatch2": [{ "src": "/images/horizontal.JPG" }],
         "text2": "Proin imperdiet sed purus sed pharetra. Donec elementum eget ex eu tristique. Nulla venenatis massa non odio convallis lobortis. Pellentesque nec porttitor lectus. Sed libero nulla, eleifend non maximus ut, eleifend vel neque."
     },
-    { "name": "Sobbing Bookstore" },
-    { "name": "Piskaralo" },
-    { "name": "Bookie" },
-    { "name": "Shljokice" },
-    { "name": "Playground" }
+    {
+        "name": "Imprint",
+        "text1": "A web app for writing. It’s main purpose is to enable the writer to focus with embedded useful side tools."
+    },
+    {
+        "name": "Bookie",
+        "text1": "A web app for tracking your personal library. You can track your books, it’s status, and their circulation among your friends."
+    },
+    {
+        "name": "Sobbing",
+        "text1": "A personal blog for my eclectic content I consider worth sharing. When I think about this page I think a lot about zines."
+    },
+    {
+        "name": "Playground",
+        "text1": "Pure chaos. Space for experimentation. Here I invite myself to practice, break the rules, dismantle concepts, abandon ideas, and let the breakthrough be born through coincidence. If you’re looking for sense and structure this is probably not a link to visit"
+    },
+    {
+        "name": "Bookstore website",
+        "text1": "A mock website for an imagined future space."
+    }
 ]

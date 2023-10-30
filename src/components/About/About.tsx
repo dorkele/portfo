@@ -5,32 +5,32 @@ import rainCloud from "../../../public/rain-clouds-png-273.png";
 const About = () => {
     return (
         <section className={styles.about}>
-            <Image
-                src={rainCloud}
-                alt="rain cloud"
-                className={styles.cloud1}
-                height={235}
-            />
-            <div>
+            <div className={styles.contentContainer}>
+                <Image
+                    src={rainCloud}
+                    alt="rain cloud"
+                    className={styles.cloud1}
+                    height={235}
+                />
                 <div>
-                    <div className={styles.orangeElement}></div>
-                    <h1 className={`text-outline h1 ${styles.title}`}>
-                        Dora Tominic
-                    </h1>
+                    <div>
+                        <div className={styles.orangeElement}></div>
+                        <h1 className={`text-outline h1 ${styles.title}`}>
+                            Dora Tominic
+                        </h1>
+                    </div>
+                    <p className={styles.paragraph}>
+                        Meticulous Frontend Developer with a passion for
+                        storytelling on the web.
+                    </p>
                 </div>
-                <p className={styles.paragraph}>
-                    Proin imperdiet sed purus sed pharetra. Donec elementum eget
-                    ex eu tristique. Nulla venenatis massa non odio convallis
-                    lobortis. Pellentesque nec porttitor lectus. Sed libero
-                    nulla, eleifend non maximus ut, eleifend vel neque.
-                </p>
+                <Image
+                    src={rainCloud}
+                    alt="rain cloud"
+                    className={styles.cloud2}
+                    height={339}
+                />
             </div>
-            <Image
-                src={rainCloud}
-                alt="rain cloud"
-                className={styles.cloud2}
-                height={339}
-            />
         </section>
     );
 };
