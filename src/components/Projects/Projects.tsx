@@ -26,7 +26,7 @@ const Projects = () => {
                             onClick={() => handleExpand(index)}
                         >
                             <h2
-                                className={`h2 text-outline text-outline-orange-fill ${styles.title}`}
+                                className={`h3 text-outline text-outline-orange-fill ${styles.title}`}
                             >
                                 {project.name}
                             </h2>

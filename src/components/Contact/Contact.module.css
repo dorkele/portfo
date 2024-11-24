@@ -11,8 +11,8 @@
 }
 
 .orangeElement {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     background-color: var(--orange-accent-color);
     border-radius: 50%;
     -webkit-filter: blur(4px);

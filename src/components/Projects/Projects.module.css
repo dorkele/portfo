@@ -8,7 +8,7 @@
     border-bottom: 1px var(--fg-color) solid;
     display: grid;
     grid-template-columns: 1fr minmax(100px, 1440px) 1fr;
-    padding: 24px 0;
+    padding: 16px 0;
 }
 
 .title {

@@ -20,7 +20,7 @@ const About = () => {
                         </h1>
                     </div>
                     <p className={styles.paragraph}>
-                        Meticulous Frontend Developer with a passion for
+                        Frontend Developer with a passion for
                         storytelling on the web.
                     </p>
                 </div>

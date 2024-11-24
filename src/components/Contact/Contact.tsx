@@ -31,9 +31,9 @@ const Contact = () => {
         <section className={styles.contact} id="contact">
             <div className={styles.titleDiv}>
                 <div className={styles.orangeElement}></div>
-                <h2 className={`h1 text-outline ${styles.title}`}>
+                <h3 className={`h3 text-outline ${styles.title}`}>
                     Point of Contact
-                </h2>
+                </h3>
             </div>
             <div className={styles.content}>
                 <div>
